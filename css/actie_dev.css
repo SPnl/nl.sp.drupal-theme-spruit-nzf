@@ -1,0 +1,190 @@
+/* agenda overzicht */
+.view-agenda .datum,
+.view-agenda .locatie,
+.view-agenda .plaats {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+.view-agenda {
+  background-color: #f1f1f1;
+  margin-bottom: -1rem;
+}
+.view-agenda .plaats {
+  padding-top: 1rem;
+  display: block;
+}
+
+.page-doe-mee .views-row:first-child {
+  border-top: solid 1rem #f1f1f1; /* nog fixen */
+}
+.page-doe-mee .views-row:last-child {
+  border-bottom: solid 1rem #f1f1f1; /* nog fixen */
+}
+.view-agenda .views-row {
+  max-width: 960px;
+  min-height: 280px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.view-agenda img {
+  float: left;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 2rem 0 0;
+  border: 0px solid #fff;
+  transition: border ease 0.35s;
+}
+.view-agenda img:hover {
+  border: 20px solid #fff;
+  transition: border ease 0.35s;
+}
+.view-agenda .cf::before,
+.view-agenda .cf::after {
+  content:" ";
+  display: table;
+}
+.view-agenda .cf::after {
+  clear: both;
+}
+.view-agenda a.cf {
+  border: none;
+  min-height: 280px;
+  display: block;
+}
+.view-agenda h2 {
+  color: #000;
+  margin: 0;
+  font-size: 2rem;
+}
+.view-agenda .cf:hover > h2{
+  text-transform: none;
+  color: #f60000;
+  transition: color ease 0.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.view-agenda .cf:hover > img {
+  border: 20px solid #fff;
+  transition: border ease 0.35s;
+}
+.primary-content .content .view-agenda .meta-plaats {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2rem 0 0 1.4rem;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.primary-content .content .view-agenda .meta-datum {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 0 0 1.4rem;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+/* agenda item */
+/*
+.pane-agenda .content a:hover {
+  border: none;
+}
+*/
+.agenda-item {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.agenda-grijs {
+  background-color: #eee;
+  border-left: 8px solid #cecece;
+  max-width: 960px;
+  margin: 0 3.4rem 0 1.4rem;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  display: block;
+  text-transform: none;
+}
+.agenda-label {
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  width: 90px;
+  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+}
+.agenda-item h2 {
+  font-family: "HelveticaInseratLTPro", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 auto 1rem auto;
+}
+.agenda-item h1 {
+  color: #f60000;
+  font-size: 3rem;
+  margin: 0 auto 1rem auto;
+  padding: 0;
+}
+/* overzicht webform-teller */
+.primary-content .content table.webform-teller-table {
+    display: table;
+}
+.webform-teller {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.webform-teller-table {
+  margin-bottom: 2rem;
+}
+.webform-teller-table th {
+  text-align: left;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  font-weight: normal;
+}
+.content table td.doel-groen {
+  background: #bada55;
+  border-bottom:2px solid #7d923a;
+  text-align:center;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';  
+  color: #fff;
+}
+
+.content table td.doel-rood {
+  background:#f60000;
+  border-bottom:2px solid #a20000;
+  text-align:center;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  color: #fff;
+}
+
+
+/* mobiel fix agenda-item */
+@media only screen and (max-width: 1025px){
+  .agenda-item h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .agenda-item h1 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 530px){
+  .agenda-label {
+    width: 100%;
+  }
+}
+/* mobiel fix agenda */
+@media only screen and (max-width: 745px){
+  .view-agenda img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px){
+  .view-agenda h2 {
+    font-size: 1.5rem;
+  }
+}
+
+

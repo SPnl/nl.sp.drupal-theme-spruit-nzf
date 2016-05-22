@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+/* Set font to Roboto */
+html,body,p,ul,ol,li,tr,td,th,label,.form-item label,input,textarea,strong {
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-header .site-branding {
+  background: #fff;
+}
+.site-header .site-branding .site-logo {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  padding-top: .35em;
+}
+.site-header .site-logo img {
+  height: auto;
+  max-width: 100%;
+}
+.site-header .site-name {
+  display: none;
+}
+
+.page .content p {
+  letter-spacing: 0;
+}
+.page .content strong {
+  font-weight: 700;
+}
+body .page-wrapper:after {
+  content: '';
+}
+.primary-content .contact-form  {
+  background: #ff5900;
+  color: #fff;
+  padding: 2em 0 1.4142em 0;
+}
+.primary-content .contact-form p {
+  color: #fff;
+}
+.primary-content .contact-form .form-submit {
+  color: #ff5900;
+  background-color: #ffe;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  box-shadow: .25em .25em 0 rgba(0,0,0,.1);
+}
+
+.primary-content .contact-form .form-submit:hover {
+  background: #000;
+}
+
+.content h1, 
+.content h2, 
+.content h3 {
+  text-transform: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.content h1 {
+  max-width: 720px;
+}
+.header-nzf h1 {
+  text-align: center;
+}
+.header-nzf h1 .last {
+  color: #ff5900;
+  display: block;
+}
+.page a,
+.page a:link,
+.page a:visited {
+  color: #ff5900;
+}
+
+.form-type-checkbox input:checked + label {
+  color: #000000;
+}
+.form-type-checkbox input:checked + label:before {
+  color: #ff5900;
+  border-color: #000;
+}
+.primary-content .contact-form .webform-component--disclaimer p {
+  color: #888;
+  color: rgba(1,1,1,.4);
+}
+
+.contact-form .form-item .form-text, 
+.contact-form .form-item .form-textarea {
+  background: #fff;
+  font-size: 1.14em;
+  border-bottom: 3px solid #D04800;
+}
+
+
+.page .contact-form .form-actions {
+  padding-top: 1em;
+}
+
+.page .contact-form .form-type-checkbox label {
+  width: auto;
+}
+
+.contact-form .webform-component--toelichting {
+  color: #888;
+}
+.page .contact-form .form-text {
+  background: #fff;
+}
+.contact-form .webform-confirmation a {
+  color: #ff59000;
+  font-weight: 700;
+  background: #fff;
+  display: inline-block;
+  padding: .2em .35em;
+}
+
+
+.page-node-81 .content .pane-2 .social li, 
+.content .pane-sp-social .social li {
+  height: 73px;
+}
+
+.content ul {
+  margin left: auto;
+  margin right: auto;
+}
+
+.content ul.social {
+  padding: 0; 
+}
+.content .social li a {
+  border: none;
+}
+.content .social .facebook a {
+  background: #3b5998;
+  color: #fff;
+}
+.content .social .twitter a {
+  background: #55acee;
+  color: #fff;
+}
+.content .social .whatsapp a {
+  background-color: #43d854;
+  color: #fff;
+}
+.content .social a:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.content .links {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Actie page menu */
+.content .menu {
+  overflow: hidden;
+}
+.content .menu li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.content .menu li a {
+  padding: .4em .72em;
+  display: inline-block;
+  border: 1px solid #f60000
+}
+.content .menu li a.active {
+  display: inline-block;
+  border: 1px solid #bbb;
+}
+
+.webform-component--postcode .form-text,
+.webform-component--huisnummer .form-text {
+	width: 160px;
+}
+
+ul.sp_buttons {
+  font-family: Roboto, 'Sans serif';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.primary-content .sp_buttons li {
+  font-size: 1em;
+  list-style: none;
+  float: left;
+}
+
+.sp_buttons li a {
+  margin-right: .4em;
+  padding: .4em .72em;
+  color: #fff;
+  display: block;
+  border: 1px solid #f60000;
+  text-align: center;
+  background: #f60000;
+}
+
+.sp_buttons li a:hover {
+  border: 1px solid #000;
+  color: #fff;
+  background: #000000;
+  transition: .4s;
+}
+
+.sp_buttons:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.page-wrapper:after {
+  display: none;
+}
+
+.page .social-share li span {
+  background: #ff5900;
+}
+.site-footer {
+  background: #f1f1f1;
+  padding: .71em;
+  margin-top: .71em;
+}
+.site-footer .copyright {
+  border: none;
+}
+
+.page nav.top-nav a {  
+  background: #ff5900;
+  color: #fff;
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-form .webform-component-textfield label {
+    display: none;
+  }
+ .page .social-share ul { 
+     position: absolute;
+  }
+}
+
+@media only screen and (min-width: 768px) { 
+  .site-header .site-branding .site-name {
+    font-size: 2.8em;
+    padding-top: 3px;
+  }
+  .site-header .site-branding .site-logo {
+    height: auto;
+  }
+  .header-nzf h1 {
+    font-size: 2.83em;
+  }
+}
+
+.no-touch .content .social .whatsapp {
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+   .site-header .site-branding .site-logo {
+    height: auto;
+  }
+}
+
