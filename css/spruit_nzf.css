@@ -272,7 +272,8 @@ ul.sp_buttons {
 
 @media only screen and (min-width: 1080px) {
    .site-header .site-branding .site-logo {
-    height: auto;
+     max-width: 680px;
+     padding-top: 1.4142em;
   }
 }
 
