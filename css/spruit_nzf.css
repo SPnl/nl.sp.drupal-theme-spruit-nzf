@@ -53,6 +53,7 @@ body .page-wrapper:after {
 .primary-content .contact-form .form-submit:hover {
   background: #000;
 }
+.contact-form .messages .error { background: #900; border: 2px solid #700; }
 
 .content h1,
 .primary-content header .title, 
