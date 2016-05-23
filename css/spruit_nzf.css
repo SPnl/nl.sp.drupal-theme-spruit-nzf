@@ -54,7 +54,8 @@ body .page-wrapper:after {
   background: #000;
 }
 
-.content h1, 
+.content h1,
+.primary-content header .title, 
 .content h2, 
 .content h3 {
   text-transform: none;
@@ -84,7 +85,10 @@ body .page-wrapper:after {
   color: #ff5900;
   border-color: #000;
 }
-.primary-content .contact-form .webform-component--disclaimer p {
+.primary-content .contact-form .webform-component--disclaimer p,
+.primary-content .contact-form .webform-component--disclaimer a,
+.primary-content .contact-form .webform-component--disclaimer a:link,
+.primary-content .contact-form .webform-component--disclaimer a:visited {
   color: #888;
   color: rgba(1,1,1,.4);
 }

@@ -29,22 +29,12 @@
           <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu primary-menu')), 'heading' => '')); ?>
         </nav>
       <?php endif; ?>
-      <div class="search-toggle">
-        <?php if ($page['search']): ?>
-          <a href="#search" class="button btn-search"><span class="text"><?php print t('Search'); ?></span></a>
-        <?php endif; ?>
-      </div>
     </header>
 
      <?php if ($page['search']): ?>
       <div class="site-search">
         <?php print render($page['search']); ?>
       </div>
-    <?php endif; ?>
-
-    
-    <?php if ($page['highlight']): ?>
-      <div class="highlight-content"><?php print render($page['highlight']); ?></div>
     <?php endif; ?>
 
     <?php print $messages; ?>

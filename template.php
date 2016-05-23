@@ -13,6 +13,3 @@ function spruit_nzf_preprocess_html(&$variables) {
   ); */
 }
 
-function spruit_nzf_css_alter(&$css) {
-  foreach ($css as $key => $value) { $css[$key]['preprocess'] = FALSE; }
-}
