@@ -27,6 +27,10 @@ html,body,p,ul,ol,li,tr,td,th,label,.form-item label,input,textarea,strong {
 .page .content p {
   letter-spacing: 0;
 }
+.content em {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
 .page .content strong {
   font-weight: 700;
 }
@@ -68,6 +72,7 @@ body .page-wrapper:after {
 }
 .header-nzf h1 {
   text-align: center;
+  margin: 0 0 .5em 0;
 }
 .header-nzf h1 .last {
   color: #ff5900;
@@ -245,9 +250,6 @@ ul.sp_buttons {
 }
 
 @media only screen and (max-width: 425px) {
-  .contact-form .webform-component-textfield label {
-    display: none;
-  }
  .page .social-share ul { 
      position: absolute;
   }
@@ -262,7 +264,7 @@ ul.sp_buttons {
     height: auto;
   }
   .header-nzf h1 {
-    font-size: 2.83em;
+    font-size: 3.6em;
   }
 }
 
