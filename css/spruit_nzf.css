@@ -78,12 +78,16 @@ body .page-wrapper:after {
   color: #ff5900;
   display: block;
 }
+/* links */
 .page a,
 .page a:link,
 .page a:visited {
   color: #ff5900;
 }
-
+.content a:hover {
+  border-bottom: 2px solid #ff5900;
+}
+/* forms */
 .form-type-checkbox input:checked + label {
   color: #000000;
 }
