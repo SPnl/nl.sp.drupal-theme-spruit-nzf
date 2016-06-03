@@ -10,11 +10,11 @@ html,body,p,ul,ol,li,tr,td,th,label,.form-item label,input,textarea,strong {
 }
 .site-header .site-branding .site-logo {
   width: 100%;
-  max-width: 320px;
+  max-width: 280px;
   margin: 0 auto;
   display: block;
   height: auto;
-  padding-top: .35em;
+  padding: 0 0 .4em 0;
 }
 .site-header .site-logo img {
   height: auto;
@@ -34,6 +34,7 @@ html,body,p,ul,ol,li,tr,td,th,label,.form-item label,input,textarea,strong {
 .page .content strong {
   font-weight: 700;
 }
+
 body .page-wrapper:after {
   content: '';
 }
@@ -110,7 +111,6 @@ body .page-wrapper:after {
   border-bottom: 3px solid #D04800;
 }
 
-
 .page .contact-form .form-actions {
   padding-top: 1em;
 }
@@ -133,38 +133,9 @@ body .page-wrapper:after {
   padding: .2em .35em;
 }
 
-
-.page-node-81 .content .pane-2 .social li, 
+.page-node-81 .content .pane-2 .social li,
 .content .pane-sp-social .social li {
   height: 73px;
-}
-
-.content ul {
-  margin left: auto;
-  margin right: auto;
-}
-
-.content ul.social {
-  padding: 0; 
-}
-.content .social li a {
-  border: none;
-}
-.content .social .facebook a {
-  background: #3b5998;
-  color: #fff;
-}
-.content .social .twitter a {
-  background: #55acee;
-  color: #fff;
-}
-.content .social .whatsapp a {
-  background-color: #43d854;
-  color: #fff;
-}
-.content .social a:hover {
-  background: #000;
-  border-color: #000;
 }
 
 .content .links {
@@ -180,7 +151,6 @@ body .page-wrapper:after {
 }
 .content .menu li {
   display: inline-block;
-  text-transform: uppercase;
 }
 .content .menu li a {
   padding: .4em .72em;
@@ -194,7 +164,7 @@ body .page-wrapper:after {
 
 .webform-component--postcode .form-text,
 .webform-component--huisnummer .form-text {
-	width: 160px;
+  width: 160px;
 }
 
 ul.sp_buttons {
@@ -253,12 +223,69 @@ ul.sp_buttons {
   color: #fff;
 }
 
+/* Meer weten */
+.more-nav {
+  background:#f1f1f1;
+  color:#ff5900;
+  height:50px;
+  padding:.5em;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  width:100%;
+  text-align:center;
+  z-index: 1;
+  font-weight: bold;
+}
+
+/* bezoeker-menu */
+
+.bezoeker-menu {
+  background: #f1f1f1;
+  text-align: center;
+}
+.content .bezoeker-menu .menu li a {
+  border: none;
+  background: #fff;
+  box-shadow: .25em .25em 0 rgba(0,0,0,.1);
+  border-radius: 3px;
+}
+.content .bezoeker-menu li:hover a:hover {
+  background: #000;
+  color: #ff5900;
+}
+
+.content a:hover {
+  border-bottom: 2px solid #ff5900;
+}
+.content .menu {
+  margin: 0;
+  padding-top: 0.4rem;
+}
+.site-footer {
+  margin: 0;
+}
+
+/* Mobile adjustments */
+
+.no-touch .content .social .whatsapp {
+  display: none;
+}
+
 @media only screen and (max-width: 425px) {
+  .site-header .site-branding .site-logo {
+    margin: 0; 
+  }
  .page .social-share ul { 
      position: absolute;
+     top: 0;
+  }
+  .page .social-share ul span {
+    display: none;
   }
 }
 
+/* Tablet adjustments */
 @media only screen and (min-width: 768px) { 
   .site-header .site-branding .site-name {
     font-size: 2.8em;
@@ -272,10 +299,7 @@ ul.sp_buttons {
   }
 }
 
-.no-touch .content .social .whatsapp {
-  display: none;
-}
-
+/* Big screen adjustments */
 @media only screen and (min-width: 1080px) {
    .site-header .site-branding .site-logo {
      max-width: 680px;

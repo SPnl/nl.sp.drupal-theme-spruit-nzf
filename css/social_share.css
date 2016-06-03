@@ -52,6 +52,38 @@
   transition: margin 0.4s ease;
 }
 
+/* Share links in content */
+.content ul.social {
+  padding: 0; 
+}
+.content .social li a,
+.content .social li a:link,
+.content .social li a:visited {
+  border: none;
+}
+.content .social .facebook a,
+.content .social .facebook a:link,
+.content .social .facebook a:visited {
+  background: #3b5998;
+  color: #fff;
+}
+.content .social .twitter a,
+.content .social .twitter a:link,
+.content .social .twitter a:visited {
+  background: #55acee;
+  color: #fff;
+}
+.content .social .whatsapp a,
+.content .social .whatsapp a:link,
+.content .social .whatsapp a:visited, {
+  background-color: #43d854;
+  color: #fff;
+}
+.content .social a:hover {
+  background: #000;
+  border-color: #000;
+}
+
 /* alleen voor mobiel laten zien */
 .no-touch .social-share .whatsapp {
   display: none;
