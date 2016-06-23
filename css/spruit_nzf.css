@@ -262,7 +262,6 @@ p.meta-datum {
 }
 .persoon {
   background:#f1f1f1;
-  padding:10px;
   margin-bottom:10px;
   margin-right:10px;
   max-width:295px;
@@ -273,7 +272,6 @@ p.meta-datum {
 }
 .content .persoon img {
   display:inline;
-  border:1px solid #ddd;
 }
 .persoon .naam {
   font-weight:800;
@@ -281,6 +279,8 @@ p.meta-datum {
 }
 .persoon .functie {
   font-size:0.8em;
+  padding-bottom:10px;
+  display:block;
 }
 /* Meer weten */
 .more-nav {
@@ -334,10 +334,20 @@ p.meta-datum {
 @media only screen and (max-width:914px) {
   .personen {
     max-width:610px;
+  }
+  .persoon .naam {
+    padding-top:20px;
+  }
+  .content .persoon img {
+    max-width:100px;
+    float:left;
+    margin-bottom:0;
+  }
 }
 @media only screen and (max-width:610px) {
   .personen {
     max-width:296px;
+  }
 }
 
 /* Mobile adjustments */
