@@ -58,6 +58,9 @@ body .page-wrapper:after {
 .primary-content .contact-form .form-submit:hover {
   background: #000;
 }
+.primary-content .content ul {
+  padding-left:3em;
+}
 .contact-form .messages .error { background: #900; border: 2px solid #700; }
 
 .content h1,
@@ -222,13 +225,68 @@ ul.sp_buttons {
   background: #ff5900;
   color: #fff;
 }
-
+/* Agenda view werkt niet meer door alias patroon
+.agenda-grijs {
+  background: #f1f1f1;
+  max-width:916px;
+  padding:1rem;
+  margin:0 auto 1.5rem auto;
+  font-size: 0.8em;
+}
+.agenda-label {
+  font-weight:800;
+  display: block;
+}
+p.meta-datum {
+  text-transform: capitalize;
+}
+*/
+/* Agenda node - vervanger voor Agenda view */
+.content .field.field-datum {
+  padding: 1rem 1.4rem 0 1.4rem;
+  text-transform: capitalize;
+  max-width:916px;
+  background:#f1f1f1;
+}
+.content .field.field-locatie {
+  padding: 0 1.4rem 1rem 1.4rem;
+  max-width:916px;
+  background:#f1f1f1;
+  margin-bottom: 1rem;
+}
+/* Manifest */
+.personen {
+  max-width:916px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.persoon {
+  background:#f1f1f1;
+  padding:10px;
+  margin-bottom:10px;
+  margin-right:10px;
+  max-width:295px;
+  width:100%;
+  float:left;
+  text-align:center;
+  border:1px solid #ddd;
+}
+.content .persoon img {
+  display:inline;
+  border:1px solid #ddd;
+}
+.persoon .naam {
+  font-weight:800;
+  display:block;
+}
+.persoon .functie {
+  font-size:0.8em;
+}
 /* Meer weten */
 .more-nav {
   background:#f1f1f1;
   color:#ff5900;
-  height:50px;
-  padding:.5em;
+  padding: 1.14em;
   position:fixed;
   bottom:0;
   left: 0;
@@ -236,6 +294,11 @@ ul.sp_buttons {
   text-align:center;
   z-index: 1;
   font-weight: bold;
+  border: none;
+  box-shadow: 0 0 2em rgba(120,80,1,.3);
+}
+.content a.more-nav:hover {
+  border: none;
 }
 
 /* bezoeker-menu */
@@ -266,6 +329,17 @@ ul.sp_buttons {
   margin: 0;
 }
 
+
+/* Manifest adjustments */
+@media only screen and (max-width:914px) {
+  .personen {
+    max-width:610px;
+}
+@media only screen and (max-width:610px) {
+  .personen {
+    max-width:296px;
+}
+
 /* Mobile adjustments */
 
 .no-touch .content .social .whatsapp {
@@ -276,9 +350,14 @@ ul.sp_buttons {
   .site-header .site-branding .site-logo {
     margin: 0; 
   }
- .page .social-share ul { 
-     position: absolute;
-     top: 0;
+  .primary-content header .title {
+    font-size: 1.5em;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+  .page .social-share ul { 
+    position: absolute;
+    top: 0;
   }
   .page .social-share ul span {
     display: none;
@@ -301,7 +380,8 @@ ul.sp_buttons {
 
 /* Big screen adjustments */
 @media only screen and (min-width: 1080px) {
-   .site-header .site-branding .site-logo {
+  .site-header .site-branding .site-logo {
+     height: auto;
      max-width: 680px;
      padding-top: 1.4142em;
   }

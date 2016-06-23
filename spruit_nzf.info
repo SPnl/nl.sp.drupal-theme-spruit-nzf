@@ -5,8 +5,8 @@ version = 1.1
 core = 7.x
 base theme = spruit
 
-stylesheets[all][] = css/spruit_nzf.css
-stylesheets[all][] = css/social_share.css
+stylesheets[screen][] = css/spruit_nzf.css
+stylesheets[screen][] = css/social_share.css
 
 scripts[] = js/main.js
 
