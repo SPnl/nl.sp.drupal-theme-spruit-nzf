@@ -48,11 +48,14 @@ body .page-wrapper:after {
 }
 .primary-content .contact-form .form-submit {
   color: #ff5900;
-  background-color: #ffe;
+  background-color: #fff;
   border: none;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 1.14em;
   box-shadow: .25em .25em 0 rgba(0,0,0,.1);
+  max-width: 52%;
+  padding: 1.14em;
 }
 
 .primary-content .contact-form .form-submit:hover {
@@ -219,41 +222,41 @@ ul.sp_buttons {
 }
 .site-footer .copyright {
   border: none;
+  font-size: 1em;
+  max-width: 480px;
 }
 
 .page nav.top-nav a {  
   background: #ff5900;
   color: #fff;
 }
-/* Agenda view werkt niet meer door alias patroon
-.agenda-grijs {
-  background: #f1f1f1;
-  max-width:916px;
-  padding:1rem;
-  margin:0 auto 1.5rem auto;
-  font-size: 0.8em;
+
+/* Agenda overview */
+.content .agenda-overzicht .views-row-first{
+  border-top: 4px solid #ddd;
+  margin-top: 1.4em;
 }
-.agenda-label {
-  font-weight:800;
-  display: block;
+.agenda-overzicht .views-row {
+  border-bottom: 4px solid #ddd;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: .71em 0 1.4em 0;
 }
-p.meta-datum {
-  text-transform: capitalize;
-}
-*/
-/* Agenda node - vervanger voor Agenda view */
-.content .field.field-datum {
+
+/* Agenda node */
+.content .node-actie-agenda .field-datum {
   padding: 1rem 1.4rem 0 1.4rem;
   text-transform: capitalize;
   max-width:916px;
   background:#f1f1f1;
 }
-.content .field.field-locatie {
+.content .node-actie-agenda  .field-locatie {
   padding: 0 1.4rem 1rem 1.4rem;
   max-width:916px;
   background:#f1f1f1;
   margin-bottom: 1rem;
 }
+
 /* Manifest */
 .personen {
   max-width:916px;
@@ -392,8 +395,12 @@ p.meta-datum {
 @media only screen and (min-width: 1080px) {
   .site-header .site-branding .site-logo {
      height: auto;
-     max-width: 680px;
-     padding-top: 1.4142em;
+     max-width: 620px;
+     padding: 1.14em 0;
   }
 }
 
+/* Paper webform */
+.page-papier .site-header .site-branding .site-logo {
+  max-width:280px;
+}
