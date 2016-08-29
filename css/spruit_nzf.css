@@ -259,7 +259,10 @@ ul.sp_buttons {
   background:#f1f1f1;
   margin-bottom: 1rem;
 }
-
+/* Organisaties */
+img.nzf-organisaties {
+    margin: 0 auto;
+}
 /* Manifest */
 .personen {
   max-width:916px;
