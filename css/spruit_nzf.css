@@ -95,6 +95,9 @@ body .page-wrapper:after {
   border-bottom: 2px solid #ff5900;
 }
 /* forms */
+.form-item:first-of-type {
+    padding-top: 0.4em;
+}
 .form-type-checkbox input:checked + label {
   color: #000000;
 }
