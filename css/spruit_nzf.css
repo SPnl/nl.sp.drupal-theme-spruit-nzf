@@ -153,6 +153,11 @@ body .page-wrapper:after {
   overflow: hidden;
   width: 100%;
 }
+/* quickfix form bevestiging */
+.page-node-78 header.content-header {
+    display: none;
+}
+
 
 /* Actie page menu */
 .content .menu {
