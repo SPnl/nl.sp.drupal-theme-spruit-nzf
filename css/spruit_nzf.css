@@ -332,6 +332,196 @@ ul.sp_buttons {
   margin: 0;
 }
 
+/* NZF Tijdlijn */
+.page-tijdlijn .site-header .site-branding .site-logo {
+  max-width: 500px;
+}
+#nzf-timeline-frame {
+}
+.view-id-tijdlijn h3 {
+  text-align:center;
+  font-size:3em;
+  background:#ff5900;
+  color:#fff;
+  width:250px;
+  margin:0 auto;
+  padding:10px;
+  border:5px solid #ff5900;
+  border-radius:25px;
+}
+#nzf-timeline-wrapper-first,
+#nzf-timeline-wrapper,
+#nzf-timeline-wrapper-last {
+  min-height:430px;
+  max-width:1200px;
+  margin:0 auto;
+  position:relative;
+  border-bottom:5px solid #fff;
+}
+#nzf-timeline-wrapper-first {
+  min-height:360px;
+}
+.nzf-timeline-friends {
+  width:45%;
+  height:300px;
+  float:left;
+  text-align:right;
+  position:absolute;
+  left:0%;
+  display:none;
+}
+.nzf-timeline-line-first,
+.nzf-timeline-line-last,
+.nzf-timeline-line {
+  width:10%;
+  min-height:360px;
+  float:left;
+  text-align:center;
+  position:absolute;
+  left:45%;
+  z-index:1;
+}
+.nzf-timeline-line-last:after {
+  max-height:76px;
+}
+.nzf-timeline-line-first:after,
+.nzf-timeline-line-last:after {
+  content:"";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 47%; /*betere uitlijning nodig */
+  border-left: 5px dotted #ff5900;
+}
+.nzf-timeline-dot-first,
+.nzf-timeline-dot {
+  height: 34px;
+  width: 34px;
+  background: #fff;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 25px;
+  position: absolute;
+  z-index: 2;
+  margin-top:80px;
+  border:5px solid #ff5900;
+}
+.nzf-timeline-dot-last {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  z-index: 2;
+  margin-top:72px;
+}
+
+.nzf-timeline-dot-line {
+  background:#ff5900;
+  position:absolute;
+  left:50%;
+  height:5px;
+  width:50%;
+  margin-top:95px;
+}
+
+.nzf-timeline-item {
+  width:44%;
+  padding:30px;
+  overflow:hidden;
+  float:left;
+  position:absolute;
+  left:55%;
+  margin-top:20px;
+  border:5px solid #ff5900;
+  border-radius:25px;
+  text-align:justify;
+  background:#fff;
+}
+.nzf-timeline-item img {
+  max-height:275px;
+  border:1px solid #eaeaea;
+}
+#nzf-timeline-wrapper-last .nzf-timeline-meta,
+#nzf-timeline-wrapper .nzf-timeline-meta{
+  font-size:0.8em;
+  text-transform:uppercase;
+}
+#nzf-timeline-wrapper-first h1,
+#nzf-timeline-wrapper-last h1,	
+#nzf-timeline-wrapper h1{
+  padding:0 1.4rem;
+  margin:0;
+}
+
+.views-row-even .nzf-timeline-friends  {left:55%;}
+.views-row-even .nzf-timeline-item     {left:1%;}
+.views-row-even .nzf-timeline-dot-line {left:0%;}
+
+#nzf-timeline-wrapper:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 49.7%;
+  left: calc(50% - 2.5px);
+  z-index:-1;
+  border-left: 5px dotted #ff5900;
+}
+
+@media only screen and (max-width: 960px) {
+  #nzf-timeline-wrapper {
+    overflow:hidden;
+    min-height:100%;
+    padding-bottom:45px;
+  } 
+  .views-row-even .nzf-timeline-friends {left:0%;}
+  .view-id-tijdlijn h3 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .nzf-timeline-dot,
+  .nzf-timeline-dot-last,
+  .nzf-timeline-dot-line {
+    display:none;
+  }
+  .views-row-even .nzf-timeline-item,
+  .nzf-timeline-item {
+    margin-top:50px;
+    left:50px;
+    position:relative;
+    width:calc(100% - 100px);
+  }
+  .views-row-even .nzf-timeline-dot-line {
+    left:55%;
+  }
+  .nzf-timeline-line-first, .nzf-timeline-line-last, .nzf-timeline-line {
+    z-index:-1;
+  }
+
+}
+@media only screen and (max-width: 520px) {
+  .nzf-timeline-item {
+    padding: 10px;
+  } 
+  .nzf-timeline-item p {font-size:1em!important;}
+  .views-row-even .nzf-timeline-item, .nzf-timeline-item {
+    left: 10px;
+    width: calc(100% - 20px);
+    text-align:left;
+  }
+  .view-id-tijdlijn h3 {height: 84px;}
+  .nzf-timeline-line-first, .nzf-timeline-line-last, .nzf-timeline-line {min-height: 525px;}
+}  
+@media only screen and (max-width: 400px) {
+  #nzf-timeline-wrapper h1 {
+    font-size:1.5em;
+  }
+}
+
 
 /* Manifest adjustments */
 @media only screen and (max-width:914px) {
