@@ -145,7 +145,7 @@ body .page-wrapper:after {
 .page-node-81 .content .pane-2 .social li,
 .content .pane-sp-social .social li {
   height: 73px;
-17px}
+}
 
 .content .links {
   max-width: 960px;
@@ -173,7 +173,7 @@ body .page-wrapper:after {
 }
 .content .menu li a.active {
   display: inline-block;
-  bo17pxrder: 1px solid #bbb;
+  border: 1px solid #bbb;
 }
 
 .webform-component--postcode .form-text,
@@ -194,7 +194,7 @@ ul.sp_buttons {
 }
 
 .sp_buttons li a {
-  margin17px-right: .4em;
+  margin-right: .4em;
   padding: .4em .72em;
   color: #fff;
   display: block;
@@ -236,7 +236,7 @@ ul.sp_buttons {
 
 .page nav.top-nav a {  
   background: #ff5900;
-  color: #ff17pxf;
+  color: #fff;
 }
 
 /* Agenda overview */
@@ -278,7 +278,7 @@ img.nzf-organisaties {
   background:#f1f1f1;
   margin-bottom:10px;
   margin-right:10px;
-  max-width:295p17pxx;
+  max-width:295px;
   width:100%;
   float:left;
   text-align:center;
