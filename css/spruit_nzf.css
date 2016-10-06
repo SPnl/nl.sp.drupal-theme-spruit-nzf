@@ -342,6 +342,74 @@ img.nzf-organisaties {
 .site-footer {
   margin: 0;
 }
+/* NZF cards */
+.clearfix {
+  clear:both;
+}
+#nzf-cards-wrapper {
+  clear:both;
+  max-width:900px;
+  margin:0 auto;
+  transition:ease 0.5s;
+}
+.nzf-cards {
+  border:5px solid #ff5900;
+  width:100%;
+  max-width:160px;
+  border-radius:25px;
+  padding:5px;
+  margin:10px;
+  float:left;
+  overflow:hidden;
+  transition:ease 0.5s;
+  height:200px;
+}
+.nzf-cards img {
+  width:80px;
+  margin:30px;
+  transition:ease 0.5s;
+}
+.nzf-cards:hover {
+}
+.nzf-cards:hover img {
+  margin-top:-100px;
+  transition:ease 0.5s;
+}
+#nzf-cards-wrapper p,
+#nzf-cards-wrapper h1 {
+  font-size:1em;
+  padding:0;
+  text-align:center;    
+}
+#nzf-cards-wrapper h1 {
+  line-height:40px;
+}
+/* mobile fix */
+@media only screen and (max-width:899px){
+  #nzf-cards-wrapper {
+    max-width:720px;
+  }
+}
+@media only screen and (max-width:719px){
+  #nzf-cards-wrapper {
+    max-width:540px;
+  }
+}
+@media only screen and (max-width:539px){
+  #nzf-cards-wrapper {
+    max-width:360px;
+  }
+}
+@media only screen and (max-width:359px){
+  .nzf-cards {
+    max-width: 95%;
+    max-width: calc(100% - 20px);
+  }
+  .nzf-cards img {
+    margin:30px auto;
+  }
+}
+
 
 /* NZF Tijdlijn v2*/
 .page-tijdlijn .site-header .site-branding .site-logo {
@@ -474,6 +542,10 @@ img.nzf-organisaties {
 .views-row-even .nzf-tijdlijn-dot-line {
   left:0%;
 }
+.content .media-element-container img {
+  margin: 0 auto;
+}
+
 /* mobile fix */
 @media only screen and (min-width: 960px){
   #nzf-tijdlijn-wrapper {
