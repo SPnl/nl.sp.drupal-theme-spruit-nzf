@@ -46,17 +46,29 @@ body .page-wrapper:after {
 .primary-content .contact-form p {
   color: #fff;
 }
-.primary-content .contact-form .form-submit {
-  color: #ff5900;
-  background-color: #fff;
+.primary-content .webform-client-form .form-submit {
+  color: #ffffff;
+  background-color: #ff5900;
   border: none;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.14em;
   box-shadow: .25em .25em 0 rgba(0,0,0,.1);
-  max-width: 52%;
   padding: 1.14em;
+  max-width: 52%;
+  min-width: 280px;
 }
+
+.page .primary-content .contact-form .form-submit {
+  color: #ff5900;
+  background-color: #fff;
+}
+
+.webform-client-form-119 .webform-component--tussenvoegsel {
+    width: 25%;
+    min-width: 150px;
+}
+
 
 .primary-content .contact-form .form-submit:hover {
   background: #000;
@@ -94,10 +106,17 @@ body .page-wrapper:after {
 .content a:hover {
   border-bottom: 2px solid #ff5900;
 }
-/* forms */
-.form-item:first-of-type {
-    padding-top: 0.4em;
+/* FORMS */
+.front .webform-client-form a,
+.front .webform-client-form a:link,
+.front .webform-client-form a:visited,
+.front .webform-client-form a:hover {
+  color: #fff;
+  border-bottom:2px solid;
 }
+
+.form-item:first-of-type {padding-top: 0.4em;}
+.form-item .form-text:focus {border-color: #ff5900;}
 .form-type-checkbox input:checked + label {
   color: #000000;
 }
@@ -687,4 +706,71 @@ img.nzf-organisaties {
 /* Paper webform */
 .page-papier .site-header .site-branding .site-logo {
   max-width:280px;
+}
+
+/* AFTRAP WEBFORM */
+.page-node-119 .primary-content header .title {max-width:100%!important;background:#ff5900;color:#fff;margin-bottom:10px;text-align:center;}
+.page-node-119 .primary-content .content h3 {padding:0}
+.page-node-119 .form-item,
+.page-node-119 .form-actions {padding: .4em 0;}
+@media only screen and (max-width:965px){
+  .page-node-119 .primary-content header .title {
+    border-radius:0px;
+  }
+}
+
+/* AFTRAP */
+#nzf-header-aftrap {
+  position:absolute;
+  top:18px;
+  width:100%;
+  background:#ff5900;
+}
+#nzf-header-aftrap h1 {
+  color:#fff;
+  text-align:center;
+  font-size:2.4em;
+}
+#nzf-aftrap-beschrijving {
+  max-width:640px;
+  margin:0 auto;
+  padding-bottom:23px;
+  text-align:center;
+}
+#nzf-aftrap-beschrijving a {
+}
+#nzf-aftrap-beschrijving a:hover {
+  color:#ff5900;
+}
+.front .site-header {
+  margin-top:100px;
+}
+
+/* AFTRAP MOBIEL */
+@media only screen and (max-width:1079px){
+  #nzf-header-aftrap h1{
+    font-size:2em;
+  }
+}
+@media only screen and (max-width:670px){
+  #nzf-header-aftrap h1{
+    font-size:1.5em;
+  }
+  .front .site-header {
+   margin-top:84px;
+  }
+}
+@media only screen and (max-width:630px){
+  #nzf-header-aftrap-title {
+   display:block;
+  }
+  .front .site-header {
+    margin-top:108px;
+  }
+}
+@media only screen and (max-width:425px){
+  #nzf-header-aftrap h1 {
+    padding-right:42px;
+    font-size:1.5em;
+  }
 }
