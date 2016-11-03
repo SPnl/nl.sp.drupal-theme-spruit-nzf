@@ -719,45 +719,59 @@ img.nzf-organisaties {
   }
 }
 
-/* AFTRAP */
+/* AFTRAP 26 NOVEMBER v2 */
+/* AFTRAP AANPASSINGEN WEBFORM */
+.page-node-119 .primary-content header .title {max-width:100%!important;background:#ff5900;color:#fff;margin-bottom:10px;text-align:center;}
+.page-node-119 .primary-content .content h3 {padding:0}
+.page-node-119 .form-item,
+.page-node-119 .form-actions {padding: .4em 0;}
+@media only screen and (max-width:965px){
+  .page-node-119 .primary-content header .title {
+    border-radius:0px;
+  }
+}
+/* AFTRAP HEADER */
 #nzf-header-aftrap {
   position:absolute;
-  top:18px;
+  top:-125px;
+  left:50%;
+  transform:translate(-50%, 0%);
   width:100%;
+  max-width:675px;
   background:#ff5900;
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius:25px;
+  transition:0.5s ease top;
+  cursor:pointer;
+}
+#nzf-header-aftrap:hover {
+  background:#fff;
+  border-left:5px solid #ff5900;
+  border-bottom:5px solid #ff5900;
+  border-right:5px solid #ff5900;
+}
+#nzf-header-aftrap:hover h1 {
+  color:#ff5900;
+}
+.nzf-header-aftrap-show {
+  top:0!important;
 }
 #nzf-header-aftrap h1 {
   color:#fff;
   text-align:center;
-  font-size:2.4em;
-}
-#nzf-aftrap-beschrijving {
-  max-width:640px;
-  margin:0 auto;
-  padding-bottom:23px;
-  text-align:center;
-}
-#nzf-aftrap-beschrijving a {
-}
-#nzf-aftrap-beschrijving a:hover {
-  color:#ff5900;
+  font-size:2em;
 }
 .front .site-header {
-  margin-top:100px;
+  margin-top:80px;
 }
 
 /* AFTRAP MOBIEL */
-@media only screen and (max-width:1079px){
-  #nzf-header-aftrap h1{
-    font-size:2em;
-  }
-}
 @media only screen and (max-width:670px){
   #nzf-header-aftrap h1{
     font-size:1.5em;
   }
   .front .site-header {
-   margin-top:84px;
+   margin-top:64px;
   }
 }
 @media only screen and (max-width:630px){
@@ -765,12 +779,47 @@ img.nzf-organisaties {
    display:block;
   }
   .front .site-header {
-    margin-top:108px;
+    margin-top:90px;
   }
 }
 @media only screen and (max-width:425px){
   #nzf-header-aftrap h1 {
-    padding-right:42px;
-    font-size:1.5em;
+    padding:5px 33px 5px 5px;
+    margin:0;
+    font-size:1.3em;
+  }
+  .front .site-header {
+    margin-top:60px;
   }
 }
+
+
+/* LEES OOK */
+#nzf-leesook {
+  max-width:960px;
+  margin:0 auto;
+  padding-left:1.4rem;
+  padding-right:1.4rem;
+}
+#nzf-leesook img {
+  margin:0 auto;
+  padding:15px;
+}
+.nzf-leesook-item {
+  float:left;
+  width:330px;
+  border:5px solid #ff5900; 
+  border-radius:25px;
+  margin-right:15px;
+}
+.nzf-leesook-item h2 {
+  background: #ff5900;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  padding:5px;
+  text-align:center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
