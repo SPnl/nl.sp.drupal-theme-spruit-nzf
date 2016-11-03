@@ -9,6 +9,7 @@ stylesheets[screen][] = css/spruit_nzf.css
 stylesheets[screen][] = css/social_share.css
 
 scripts[] = js/main.js
+scripts[] = js/spruit_nzf.js
 
 regions[content]   = Primary content
 regions[secondary] = Secondary content
