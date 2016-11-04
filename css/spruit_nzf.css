@@ -793,33 +793,40 @@ img.nzf-organisaties {
   }
 }
 
-
-/* LEES OOK */
+/* LEES OOK v2 */
 #nzf-leesook {
   max-width:960px;
   margin:0 auto;
-  padding-left:1.4rem;
-  padding-right:1.4rem;
-}
-#nzf-leesook img {
-  margin:0 auto;
-  padding:15px;
+  padding:15px 1.4rem;
 }
 .nzf-leesook-item {
   float:left;
-  width:330px;
-  border:5px solid #ff5900; 
+  max-height:390px;
+  border:5px solid #ff5900;
+  margin:0 15px 15px 0;
   border-radius:25px;
-  margin-right:15px;
+}
+.nzf-leesook-item img {
+  max-height:300px;
+  width:auto;
+  margin:15px;
 }
 .nzf-leesook-item h2 {
-  background: #ff5900;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  padding:5px;
+  background:#ff5900;
+  color:#fff;
+  margin:0;
+  padding:10px;
+  line-height:30px;
   text-align:center;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+@media only screen and (max-width:620px){
+  .nzf-leesook-item {
+    width:100%;
+  }
+  .nzf-leesook-item img {
+    margin:15px auto;
+  }
 }
 
