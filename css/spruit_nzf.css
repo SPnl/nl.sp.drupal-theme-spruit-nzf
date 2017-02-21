@@ -698,7 +698,7 @@ img.nzf-organisaties {
 @media only screen and (min-width: 1080px) {
   .site-header .site-branding .site-logo {
      height: auto;
-     max-width: 620px;
+     max-width: 480px;
      padding: 1.14em 0;
   }
 }
@@ -743,12 +743,20 @@ img.nzf-organisaties {
   border-bottom-right-radius:25px;
   transition:0.5s ease top;
   cursor:pointer;
+  border-left: 5px solid #ff5900;
+  border-bottom: 5px solid #ff5900;
+  border-right: 5px solid #ff5900;
+}
+/* EXTRA MARGIN FOR NZF-HEADER-AFTRAP */
+.aftrap .site-header {
+  margin-top:86px;
 }
 #nzf-header-aftrap:hover {
   background:#fff;
   border-left:5px solid #ff5900;
   border-bottom:5px solid #ff5900;
   border-right:5px solid #ff5900;
+  color:#000;
 }
 #nzf-header-aftrap:hover h1 {
   color:#ff5900;
@@ -761,26 +769,32 @@ img.nzf-organisaties {
   text-align:center;
   font-size:2em;
 }
+/*
 .front .site-header {
   margin-top:80px;
 }
+*/
 
 /* AFTRAP MOBIEL */
 @media only screen and (max-width:670px){
   #nzf-header-aftrap h1{
     font-size:1.5em;
   }
+  /*
   .front .site-header {
    margin-top:64px;
   }
+  */
 }
 @media only screen and (max-width:630px){
   #nzf-header-aftrap-title {
    display:block;
   }
+  /*
   .front .site-header {
     margin-top:90px;
   }
+  */
 }
 @media only screen and (max-width:425px){
   #nzf-header-aftrap h1 {
@@ -828,5 +842,14 @@ img.nzf-organisaties {
   .nzf-leesook-item img {
     margin:15px auto;
   }
+}
+
+/* NZF VERKIEZINGEN COUNTDOWN */
+h1#tk2017countdown {text-align:center;margin-bottom:30px;}
+@media only screen and (max-width:620px){
+  h1#tk2017countdown {font-size:1.2em;}
+}
+@media only screen and (max-width:360px){
+  h1#tk2017countdown {font-size:1em;}
 }
 

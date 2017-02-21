@@ -10,6 +10,7 @@ stylesheets[screen][] = css/social_share.css
 
 scripts[] = js/main.js
 scripts[] = js/spruit_nzf.js
+scripts[] = js/countdown.js
 
 regions[content]   = Primary content
 regions[secondary] = Secondary content
