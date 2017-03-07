@@ -2,21 +2,50 @@
   Drupal.behaviors.AgendaCountdown = {
     attach: function (context, settings) {
 
-      // set the date we're counting down to
-      var target_date = new Date("Mar 15, 2017").getTime();
-       
+      // set ID selector that should refresh
+      var countdown_id = "tk2017countdown";
+
+      // set the date we're counting down to. IMPORTANT USE SPECIFIC DATE FORMAT FOR SUPPORT SAFARI (Apple) (mm/dd/yyyy hh:mm:ss)
+      var target_date = new Date("03/15/2017 07:30:00").getTime();
+      var final_date = new Date("03/15/2017 21:00:00").getTime();
+
       // variables for time units
       var days, hours, minutes, seconds;
-       
-      // get tag element
-      var countdown = document.getElementById("tk2017countdown");
+      var countdown_status;
 
-      // update the tag with id "countdown" every 1 second
+      // determ status
       setInterval(function () {
+        var status_current_date = new Date().getTime();
+        var status_seconds_left = (target_date - status_current_date) / 1000;
+        var status_seconds_left_final = (final_date - status_current_date) / 1000;
+        if (status_seconds_left > 0){
+          countdown_status = "first";
+        }
+        if (status_seconds_left < 0){
+          countdown_status = "second";
+        }
+        if (status_seconds_left_final < 0){
+          countdown_status = "final";
+        }
+      }, 100);
+
+      // get tag element
+      var countdown = document.getElementById(countdown_id);
+
+      // update the tag countdown_id every 1 second only if status is determend first
+      if (countdown_status = "first" || "second" || "final"){
+        setInterval(function () {
 
           // find the amount of "seconds" between now and target
           var current_date = new Date().getTime();
-          var seconds_left = (target_date - current_date) / 1000;
+
+          // set seconds_left based on status
+          if (countdown_status == "first") {
+            var seconds_left = (target_date - current_date) / 1000;
+          }
+          if (countdown_status == "second") {
+            var seconds_left = (final_date - current_date) / 1000;
+          }
 
           // do some time calculations
           days = parseInt(seconds_left / 86400);
@@ -26,21 +55,35 @@
           seconds_left = seconds_left % 3600;
 
           minutes = parseInt(seconds_left / 60);
-          if (minutes <10) {
+
+          // add leading zero
+          if (minutes < 10) {
             minutes = '0' + minutes;
           }
           seconds = parseInt(seconds_left % 60);
           if (seconds < 10) {
             seconds = '0' + seconds;
           }
+          if (days <= 0) {
+            var days_string = "";
+          }else{
+            var days_string = days + " dagen en ";
+          }
 
           // format countdown string + set tag value
-          countdown.innerHTML = "Stem over " + days + " dagen en " + hours + ":"
-          + minutes + ":" + seconds + " uur" + "</br>Voor een Nationaal ZorgFonds";
+          if (countdown_status == "first") {
+            countdown.innerHTML = "Stem over " + days_string + hours + ":" + minutes + ":" + seconds + " uur</br>Voor een Nationaal ZorgFonds";
+          }
+          if (countdown_status == "second") {
+            countdown.innerHTML = "Nog " + hours + ":" + minutes + ":" + seconds + " uur om te stemmen!</br>Voor een Nationaal ZorgFonds";
+          }
+          if (countdown_status == "final") {
+            countdown.innerHTML = "Vrienden van het Nationaal ZorgFonds bedankt!";
+          }
 
-      }, 1000);
+        }, 1000);
 
-
+      }
     }
   }
 
