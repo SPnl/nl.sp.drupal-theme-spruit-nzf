@@ -30,13 +30,13 @@
   height: 42px;
 }
 .social-share li a:hover {
-  color: #f60000;
+  color: #ff5900;
   border-bottom: none;
 }
 .social-share li span {
   font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
   text-align: center;
-  background: #EC1B23;
+  background: #ff5900;
   line-height: 42px;
   color: white;
   z-index: -500;

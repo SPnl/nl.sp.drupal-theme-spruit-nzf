@@ -7,10 +7,11 @@ base theme = spruit
 
 stylesheets[screen][] = css/spruit_nzf.css
 stylesheets[screen][] = css/social_share.css
+stylesheets[screen][] = css/nzf-onderzoek-form.css
 
 scripts[] = js/main.js
 scripts[] = js/spruit_nzf.js
-scripts[] = js/countdown.js
+;scripts[] = js/countdown.js
 
 regions[content]   = Primary content
 regions[secondary] = Secondary content

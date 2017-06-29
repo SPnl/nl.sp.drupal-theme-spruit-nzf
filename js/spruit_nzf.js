@@ -7,7 +7,7 @@
       }, 1000);
 
       $("#nzf-header-aftrap").click(function(){
-        window.location.href = "/busvervoer";
+        window.location.href = "/fractievoorzitters";
       });
 
     }

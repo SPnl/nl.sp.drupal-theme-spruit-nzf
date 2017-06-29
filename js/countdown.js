@@ -67,18 +67,18 @@
           if (days <= 0) {
             var days_string = "";
           }else{
-            var days_string = days + " dagen en ";
+            var days_string = days + " dag en ";
           }
 
           // format countdown string + set tag value
           if (countdown_status == "first") {
-            countdown.innerHTML = "Stem over " + days_string + hours + ":" + minutes + ":" + seconds + " uur</br>Voor een Nationaal ZorgFonds";
+            countdown.innerHTML = "Stem over " + days_string + hours + ":" + minutes + ":" + seconds + " uur</br>voor een Nationaal ZorgFonds";
           }
           if (countdown_status == "second") {
             countdown.innerHTML = "Nog " + hours + ":" + minutes + ":" + seconds + " uur om te stemmen!</br>Voor een Nationaal ZorgFonds";
           }
           if (countdown_status == "final") {
-            countdown.innerHTML = "Vrienden van het Nationaal ZorgFonds bedankt!";
+            countdown.innerHTML = " ";
           }
 
         }, 1000);

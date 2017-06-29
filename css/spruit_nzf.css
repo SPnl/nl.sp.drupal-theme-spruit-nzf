@@ -124,6 +124,8 @@ body .page-wrapper:after {
   color: #ff5900;
   border-color: #000;
 }
+.form-type-radio { display: inline-block; }
+}
 .primary-content .contact-form .webform-component--disclaimer p,
 .primary-content .contact-form .webform-component--disclaimer a,
 .primary-content .contact-form .webform-component--disclaimer a:link,
@@ -367,6 +369,7 @@ img.nzf-organisaties {
 }
 #nzf-cards-wrapper {
   clear:both;
+  display: table;
   max-width:900px;
   margin:0 auto;
   transition:ease 0.5s;
@@ -730,7 +733,7 @@ img.nzf-organisaties {
     border-radius:0px;
   }
 }
-/* AFTRAP HEADER */
+/* AANKONDIGING HEADER */
 #nzf-header-aftrap {
   position:absolute;
   top:-125px;
@@ -747,10 +750,12 @@ img.nzf-organisaties {
   border-bottom: 5px solid #ff5900;
   border-right: 5px solid #ff5900;
 }
-/* EXTRA MARGIN FOR NZF-HEADER-AFTRAP */
-.aftrap .site-header {
+/* AANKONDIGING HEADER - EXTRA MARGIN */
+/*
+.page-overzicht .site-header {
   margin-top:86px;
 }
+*/
 #nzf-header-aftrap:hover {
   background:#fff;
   border-left:5px solid #ff5900;
@@ -775,7 +780,7 @@ img.nzf-organisaties {
 }
 */
 
-/* AFTRAP MOBIEL */
+/* AANKONDIGING MOBIEL */
 @media only screen and (max-width:670px){
   #nzf-header-aftrap h1{
     font-size:1.5em;
@@ -853,3 +858,81 @@ h1#tk2017countdown {text-align:center;margin-bottom:30px;}
   h1#tk2017countdown {font-size:1em;}
 }
 
+/* COMPONENTS FOR SASS LATER*/
+/* COMPONENT BLOCKQUOTE */
+.primary-content .content blockquote {
+    text-align: left;
+    font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+    font-size: 1em;
+    font-style: italic;
+    max-width: 640px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #ffab7d;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 45px 30px;
+    box-shadow: 0 0 7px 0 #e6e6e6;
+}
+@media screen and (max-width: 500px){
+    .primary-content .content blockquote {
+        padding: 15px 15px 45px 15px;
+        font-size: .9enm;
+    }
+}
+.primary-content .content blockquote :first-child:before {
+    content: '\201c';
+    color: #333;
+    display: none; /* CHANGE TO INLINE-BLOCK TO SHOW */
+    padding-right: .4em;
+}
+.primary-content .content blockquote :last-child:after {
+    content: '\201c';
+    color: #333;
+    display: none; /* CHANGE TO INLINE-BLOCK TO SHOW */
+    padding-left: .4em;
+}
+/* COMPONENT BTN */
+a.nzf-btn {
+    background: #ff5900;
+    color: #fff!important;
+    padding: 10px 30px;
+    display: inline-block;
+    border: none!important;
+}
+a.nzf-btn:hover {
+    box-shadow:0 0 8px 1px #8c8c8c;
+}
+a.nzf-btn.facebook {
+    background: #3b5998;
+}
+a.nzf-btn.twitter {
+    background: #1da1f2;
+}
+a.nzf-btn.whatsapp {
+    background: #00e676;
+}
+a.nzf-btn.email {
+    background: #ff5900;
+}
+a.nzf-btn.linkedin {
+    background: #0077b5;
+}
+/* COMPONENT WEBFORM */
+.primary-content fieldset {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 7px 0 #e6e6e6;
+    padding: 30px 45px 60px 30px;
+}
+@media screen and (max-width: 500px){
+    .primary-content fieldset {
+        padding: 0;
+    }
+}
+/* UTILS */
+.spacer-bottom {
+  padding-bottom: 60px;
+}
+.spacer-top {
+  padding-top: 60px;
+}
+/* END UTILS */
