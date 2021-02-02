@@ -1,5 +1,4 @@
 // ZORGMETER
-$nzf: #ff5900;
 $tooltip-width: 360px;
 
 .zorgmeter {
@@ -8,13 +7,23 @@ $tooltip-width: 360px;
   justify-content: center;
   align-content: center;
   text-align: center;
+  .th {
+    font-weight: 800;
+    border-bottom: 2px solid #000;
+  }
+  .ti {
+    text-align: right;
+    border-right: 2px solid #000;
+    padding-right: .5rem;
+  }
   > div {
     padding: 2px;
   }
   .tooltip {
     background: coral;
     cursor: pointer;
-    border:1px solid #00000047;
+    border: 1px solid #00000047;
+    min-width: 26px;
   }
   .tooltip span {
     visibility: hidden;
@@ -24,7 +33,6 @@ $tooltip-width: 360px;
     position: absolute;
     z-index: 1;
     width: 360px;
-    //bottom: 115%; //tooltip top
     padding: .5rem;
 
     border:4px solid $nzf;
@@ -68,7 +76,7 @@ $tooltip-width: 360px;
       width: 96vw;
       left: 2vw;
       right: 2vw;
-      margin-top: 16px;
+      margin-top: 24px;
     }
   }
 }
@@ -80,7 +88,7 @@ $tooltip-width: 360px;
     }
     .tooltip > span{
       width: 360px;
-      top: 115%;
+      top: 120%;
       left: 50%;
       margin-left: -180px; /* Use half of the width (120/2 = 60), to center the tooltip */
     }

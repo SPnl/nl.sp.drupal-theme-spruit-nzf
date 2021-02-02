@@ -491,6 +491,18 @@
 .no-touch .social-share .whatsapp {
   display: none; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.strong {
+  font-weight: 800; }
+
 .zorgmeter {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -498,12 +510,20 @@
   align-content: center;
   text-align: center;
   /* Show the tooltip text when you mouse over the tooltip container */ }
+  .zorgmeter .th {
+    font-weight: 800;
+    border-bottom: 2px solid #000; }
+  .zorgmeter .ti {
+    text-align: right;
+    border-right: 2px solid #000;
+    padding-right: .5rem; }
   .zorgmeter > div {
     padding: 2px; }
   .zorgmeter .tooltip {
     background: coral;
     cursor: pointer;
-    border: 1px solid #00000047; }
+    border: 1px solid #00000047;
+    min-width: 26px; }
   .zorgmeter .tooltip span {
     visibility: hidden;
     text-align: center;
@@ -538,7 +558,7 @@
       width: 96vw;
       left: 2vw;
       right: 2vw;
-      margin-top: 16px; } }
+      margin-top: 24px; } }
 @media screen and (min-width: 720px) {
   .zorgmeter {
     grid-template-columns: auto 80px 80px 80px 80px 80px 80px 80px; }
@@ -546,7 +566,7 @@
       position: relative; }
     .zorgmeter .tooltip > span {
       width: 360px;
-      top: 115%;
+      top: 120%;
       left: 50%;
       margin-left: -180px;
       /* Use half of the width (120/2 = 60), to center the tooltip */ } }
