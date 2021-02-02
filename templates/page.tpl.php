@@ -32,9 +32,8 @@
       <?php endif; ?>
     </header>
 
-    <?php print $messages; ?>
-
       <div class="primary-content">
+        <?php print $messages; ?>
         <?php if ($title): ?>
         <header class="content-header">
           <?php print render($title_prefix); ?>

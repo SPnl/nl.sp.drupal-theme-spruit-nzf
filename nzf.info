@@ -1,12 +1,13 @@
-name = SPruit - Nationaal ZorgFonds
-description = Child theme van SPruit voor nationaalzorgfonds.nl
+name = Nationaal ZorgFonds
+description = Theme voor nationaalzorgfonds.nl
 package = Other
-version = 1.1
+version = 2.0
 core = 7.x
 base theme = spruit
 
-stylesheets[screen][] = css/spruit_nzf.css
-stylesheets[screen][] = css/social_share.css
+;stylesheets[screen][] = css-legacy/spruit_nzf.css
+;stylesheets[screen][] = css-legacy/social_share.css
+stylesheets[screen][] = css/main.css
 
 scripts[] = js/main.js
 scripts[] = js/spruit_nzf.js

@@ -1,4 +1,33 @@
 (function ($) {
+  Drupal.behaviors.SiteHeaderSearchToggle = {
+    attach: function (context, settings) {
+      $('.site-search').hide();
+      $('.search-toggle a', context).click(function(event){
+        event.preventDefault();
+        $('.site-search').slideToggle(320);
+        $('body').toggleClass('site-search-on');
+      });
+    }
+  };
+
+  Drupal.behaviors.SiteHeaderMenuToggle = {
+    attach: function (context, settings) {
+      $('.menu-toggle button', context).click(function(event){
+        event.preventDefault();
+        $('.primary-menu').slideToggle(420);
+      });
+    }
+  };
+
+  function fitItems(target,screen,width) {
+     space = Math.floor(screen / width);
+     items = $(target).length;
+     if(items > space) {
+        items = space;
+     } 
+     return items;
+  }
+
   Drupal.behaviors.SiteWaypoints = {
     attach: function(context,settings) {
       
