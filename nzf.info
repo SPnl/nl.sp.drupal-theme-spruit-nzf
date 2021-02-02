@@ -3,7 +3,7 @@ description = Theme voor nationaalzorgfonds.nl
 package = Other
 version = 2.0
 core = 7.x
-base theme = spruit
+;base theme = spruit
 
 
 
@@ -13,11 +13,9 @@ stylesheets[screen][] = fonts/SPruit-icons.css
 stylesheets[screen][] = css-legacy/basic-html.css
 stylesheets[screen][] = css-legacy/page.css
 stylesheets[screen][] = css-legacy/page-sections.css
-stylesheets[screen][] = css-legacy/header.css
 stylesheets[screen][] = css-legacy/navigation.css
 stylesheets[screen][] = css-legacy/navigation-icons.css
 stylesheets[screen][] = css-legacy/search.css
-stylesheets[screen][] = css-legacy/content.css
 stylesheets[screen][] = css-legacy/content-asides.css
 stylesheets[screen][] = css-legacy/content-images.css
 stylesheets[screen][] = css-legacy/highlight.css
@@ -27,6 +25,7 @@ stylesheets[screen][] = css-legacy/footer.css
 stylesheets[screen][] = css-legacy/helper-classes.css
 
 ; New NZF theme
+stylesheets[screen][] = css/legacy.css
 stylesheets[screen][] = css/main.css
 
 ; Tweaks of modules
@@ -35,21 +34,17 @@ stylesheets[screen][] = css-legacy/modules/owl.carousel.css
 
 ; Centralized media queries
 stylesheets[screen][] = css-legacy/media/screen-max-480px.css
-stylesheets[screen][] = css-legacy/media/screen-min-768px.css
-stylesheets[screen][] = css-legacy/media/screen-min-1080px.css
 
 ; JavaScript
 scripts[] = js/vendor/modernizr-2.8.3.min.js
 scripts[] = js/vendor/jquery.waypoints.min.js
 scripts[] = js/vendor/owl.carousel.min.js
 scripts[] = js/main.js
-scripts[] = js/myfonts.js
 scripts[] = js/spruit_nzf.js
 
 ; Regions
 regions[highlight] = Highlighted content
 regions[content]   = Primary content
-regions[secondary] = Secondary content
 regions[footer]    = Footer content
 regions[search]    = Search
 

@@ -3,13 +3,6 @@
     padding-top: .4em;
     position: relative !important;
   }
-  .site-header {
-    background: #fff;
-  }
-  .site-header .search-toggle {
-    width:60px;
-    border-top: none;
-  }
   /* Collapsible navigation menu */
   .site-navigation .menu {
     display: none;
@@ -58,8 +51,5 @@
     line-height: .94;
     height: 32px;
     width: 37px;
-  }
-  .content .vimeo-video iframe {
-    height: 186px;
   }
 }

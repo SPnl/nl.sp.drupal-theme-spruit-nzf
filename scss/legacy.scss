@@ -7,9 +7,6 @@ html,body,p,ul,ol,li,tr,td,th,label,.form-item label,input,textarea,strong {
   font-family: 'Roboto', sans-serif;
 }
 
-.site-header .site-branding {
-  background: #fff;
-}
 .site-header .site-branding .site-logo {
   width: 100%;
   max-width: 280px;
@@ -190,7 +187,7 @@ body .page-wrapper:after {
 .content .menu li a {
   padding: .4em .72em;
   display: inline-block;
-  border: 1px solid #f60000
+  border: 1px solid #f60000;
 }
 .content .menu li a.active {
   display: inline-block;

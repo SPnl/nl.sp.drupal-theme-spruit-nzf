@@ -1,0 +1,19 @@
+// HEADER
+.site-logo img {
+	max-width: 620px;
+}
+
+// LEGACY
+.site-header {
+  display: table;
+  width: 100%;
+}
+
+.site-header .site-branding {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: .72em;
+  width: 120px;
+  text-align: left;
+  vertical-align: middle;
+}

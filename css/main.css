@@ -1,12 +1,408 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
 .page {
   display: grid;
-  grid-template-rows: auto auto 1fr auto; }
+  grid-template-rows: auto 1fr auto; }
 
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh; }
+
+.content a,
+.content a:link {
+  text-decoration: none;
+  color: #f60000; }
+
+.content a:hover {
+  border-bottom: 2px solid #f60000; }
+
+.content h1 {
+  font-size: 2em; }
+
+.content header {
+  margin: 2em 0 0 0; }
+
+.content header .title {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 1.4142rem;
+  padding-right: 1.4142rem; }
+
+.content table td {
+  padding: .71em;
+  text-align: left; }
+
+.content table thead {
+  background: #eee; }
+
+.block header .title {
+  padding: 0; }
+
+.content .title a {
+  text-decoration: none;
+  color: inherit; }
+
+/* Body sections in Primary content*/
+.primary-content .content p,
+.primary-content .content ul,
+.primary-content .content ol,
+.primary-content .content h1,
+.primary-content .content h2,
+.primary-content .content h3,
+.primary-content .content h4,
+.primary-content .content h5,
+.primary-content .content h6,
+.primary-content .content blockquote,
+.primary-content .content table,
+.primary-content .content pre,
+.primary-content .content code,
+.primary-content .content dl,
+.primary-content .content dt,
+.primary-content .content .meta {
+  display: block;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem; }
+
+.primary-content .content .field,
+.primary-content .content blockquote {
+  display: block;
+  max-width: 960px;
+  margin: auto;
+  padding: 0; }
+
+.primary-content .block-system,
+.primary-content .article-content .body {
+  max-width: 100%; }
+
+.primary-content header .title {
+  font-size: 2.83em;
+  margin: 0 auto;
+  padding: .35em;
+  max-width: 960px; }
+
+.primary-content .content p {
+  font-size: 1.13em;
+  line-height: 1.4142;
+  letter-spacing: .03em;
+  margin-top: 0;
+  margin-bottom: .5em; }
+
+.content .meta {
+  text-transform: uppercase;
+  font-size: .9em;
+  padding: 1em 0; }
+
+.primary-content ul,
+.primary-content ol {
+  padding-left: .4em; }
+
+.primary-content li {
+  padding-bottom: .4em;
+  font-size: 1.14rem; }
+
+.primary-content .body ul li {
+  list-style: none;
+  padding-left: 2.1em; }
+
+.primary-content .body ol li {
+  margin-left: 1.7em; }
+
+.primary-content .body ul ul li {
+  list-style: disc;
+  padding-left: 0; }
+
+.primary-content .content ul ul,
+.primary-content .content ul ol,
+.primary-content .content ol ul,
+.primary-content .content ol ol {
+  padding-top: .71em;
+  padding-left: 3.1em; }
+
+.primary-content .content ul ul li:before {
+  content: "";
+  padding-right: 0;
+  font-weight: normal;
+  line-height: 0;
+  color: #aaa; }
+
+/* Body sections in Secondary content*/
+.secondary-content .content p,
+.secondary-content .content ul,
+.secondary-content .content ol,
+.secondary-content .content h1,
+.secondary-content .content h2,
+.secondary-content .content h3,
+.secondary-content .content h4,
+.secondary-content .content h5,
+.secondary-content .content h6,
+.secondary-content .content blockquote,
+.secondary-content .content form,
+.secondary-content .content table,
+.secondary-content .content pre,
+.secondary-content .content code,
+.secondary-content .content dl,
+.secondary-content .content dt,
+.secondary-content .content .meta,
+.secondary-content .title {
+  display: block;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem; }
+
+.site-logo img {
+  max-width: 620px; }
+
+.site-header {
+  display: table;
+  width: 100%; }
+
+.site-header .site-branding {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: .72em;
+  width: 120px;
+  text-align: left;
+  vertical-align: middle; }
+
+.form-item,
+.form-actions {
+  padding: .4em 1.4em;
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.form-item:first-of-type {
+  padding-top: 0; }
+
+.form-item label {
+  display: block;
+  padding: 0 .4em 0 0;
+  font-weight: normal;
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif'; }
+
+.form-item input {
+  outline: none;
+  max-width: 100%; }
+
+.form-item .form-required {
+  color: #f60000; }
+
+.form-item .form-text,
+.form-item .form-textarea {
+  width: 100%;
+  padding: .72em;
+  background: #eee;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+  font-family: HelveticaNeueLTStd-Md, Sans-serif; }
+
+.form-item .form-text:focus {
+  background: #fff;
+  border-color: #f60000; }
+
+.form-item .description {
+  color: #aaa;
+  font-size: .9em;
+  padding: .4em; }
+
+.form-item:hover .description {
+  color: #333; }
+
+.form-item input[type="password"] {
+  font-family: mono; }
+
+.form-item select {
+  background: #f1f1f1;
+  border: none;
+  padding: .4em; }
+
+.form-submit {
+  font-family: HelveticaInseratLTPro, Impact, 'Sans serif';
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #f60000;
+  margin-right: .4em;
+  padding: .4em .72em;
+  color: #fff;
+  border: 1px solid #d00; }
+
+.form-submit:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000; }
+
+/* Form item checkbox */
+.form-checkboxes {
+  padding: .72em .4em; }
+
+.form-type-checkbox {
+  padding: .4em 0; }
+
+.form-type-checkbox:last-of-type {
+  padding-bottom: 0; }
+
+.form-type-checkbox label {
+  display: block; }
+
+.form-type-checkbox input[type="checkbox"] {
+  display: none; }
+
+.form-type-checkbox input[type="checkbox"] + label:before {
+  display: inline-block;
+  font-family: 'SPruit-icons';
+  content: 'v';
+  color: #fff;
+  background: #fff;
+  padding: .14em .32em;
+  margin-right: .72em;
+  border: 2px solid #333;
+  border-radius: .14em;
+  font-size: .92em; }
+
+.form-type-checkbox input:checked + label {
+  color: #f60000; }
+
+.form-type-checkbox input:checked + label:before {
+  content: 'v';
+  color: #f00;
+  background: #fff;
+  border-color: #f00; }
+
+.no-touch .form-type-checkbox:hover input + label:before {
+  color: #333; }
+
+.no-touch .form-type-checkbox:hover input:checked + label:before {
+  color: #f60000; }
+
+/* Errors 
+-----------------------------------------------------------------------------*/
+.form-item .form-text.error {
+  background: #fee;
+  border-bottom: 2px solid #f66666; }
+
+/* Forms in primary content 
+-----------------------------------------------------------------------------*/
+.primary-content form {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.primary-content fieldset {
+  padding: 0 1.4em 1em 1.4em;
+  margin-bottom: 1em; }
+
+.primary-content legend {
+  padding: .4em .72em;
+  font-family: HelveticaNeueLTStd-Md, Sans-serif; }
+
+/* User login */
+#user-login .description,
+#user-login .form-required {
+  display: none; }
+
+#user-login label {
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  font-weight: normal;
+  display: block;
+  padding: 0 0 .4em 0;
+  text-align: left; }
+
+#user-login #edit-name,
+#user-login #edit-pass {
+  width: 100%; }
+
+#user-login .form-submit {
+  display: block;
+  float: right;
+  font-size: 1.14em;
+  padding: .72em 1.14em;
+  margin: 0;
+  margin-top: 1.4em; }
+
+.not-logged-in.page-user .tabs ul {
+  padding: 1em 0; }
+
+.not-logged-in.page-user .tabs li {
+  margin: 0; }
+
+.not-logged-in.page-user .tabs a {
+  text-align: center; }
+
+.not-logged-in.page-user .site-footer {
+  display: none; }
+
+#user-login,
+.not-logged-in.page-user .tabs,
+.not-logged-in.page-user header .title {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 768px; }
+
+.not-logged-in.page-user .primary-content {
+  margin: 1.4em 0; }
+
+#user-pass {
+  text-align: center; }
+
+#user-pass label {
+  display: block;
+  width: 100%;
+  padding: .4em 0; }
+
+.login-forgot a {
+  font-family: HelveticaNeueLTStd-BdCn, 'Sans serif';
+  border: 2px solid #aaa;
+  color: #aaa;
+  display: inline-block;
+  padding: .14em .4em;
+  margin: 1em 0; }
+
+.primary-content .form-item p {
+  padding: 0; }
+
+.login-forgot a:hover {
+  border-color: #222;
+  background: #000;
+  color: #fff; }
+
+.grippie {
+  display: none !important; }
+
+.node-actie-webform header {
+  display: none; }
+
+/* =========================================================================
+   Webform module elements
+   ========================================================================== */
+.content .contact-form form {
+  width: 100%;
+  max-width: 610px;
+  margin: 0 auto;
+  padding: 0 0 1.4em 0; }
+
+.contact-form .form-actions .form-submit {
+  margin: 0 auto !important;
+  display: block;
+  width: 72%;
+  padding: 1em 0; }
+
+.contact-form .webform-component--disclaimer {
+  padding: 0; }
+
+.contact-form .webform-component--disclaimer p {
+  font-size: .72em;
+  color: #888;
+  text-align: center; }
+
+.contact-form .webform-component--disclaimer a,
+.contact-form .webform-component--disclaimer a:link,
+.contact-form .webform-component--disclaimer a:visited {
+  color: inherit;
+  border-bottom: 1px solid #aaa; }
 
 .primary-content .content .social-share ul {
   padding: 0;
@@ -157,9 +553,6 @@
 /* Set font to Roboto */
 html, body, p, ul, ol, li, tr, td, th, label, .form-item label, input, textarea, strong {
   font-family: 'Roboto', sans-serif; }
-
-.site-header .site-branding {
-  background: #fff; }
 
 .site-header .site-branding .site-logo {
   width: 100%;

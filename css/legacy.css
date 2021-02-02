@@ -3,9 +3,6 @@
 html, body, p, ul, ol, li, tr, td, th, label, .form-item label, input, textarea, strong {
   font-family: 'Roboto', sans-serif; }
 
-.site-header .site-branding {
-  background: #fff; }
-
 .site-header .site-branding .site-logo {
   width: 100%;
   max-width: 280px;
