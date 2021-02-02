@@ -144,14 +144,16 @@
       right: 2vw;
       margin-top: 16px; } }
 @media screen and (min-width: 720px) {
-  .zorgmeter .tooltip {
-    position: relative; }
-  .zorgmeter .tooltip > span {
-    width: 360px;
-    top: 115%;
-    left: 50%;
-    margin-left: -180px;
-    /* Use half of the width (120/2 = 60), to center the tooltip */ } }
+  .zorgmeter {
+    grid-template-columns: auto 80px 80px 80px 80px 80px 80px 80px; }
+    .zorgmeter .tooltip {
+      position: relative; }
+    .zorgmeter .tooltip > span {
+      width: 360px;
+      top: 115%;
+      left: 50%;
+      margin-left: -180px;
+      /* Use half of the width (120/2 = 60), to center the tooltip */ } }
 /* Set font to Roboto */
 html, body, p, ul, ol, li, tr, td, th, label, .form-item label, input, textarea, strong {
   font-family: 'Roboto', sans-serif; }
