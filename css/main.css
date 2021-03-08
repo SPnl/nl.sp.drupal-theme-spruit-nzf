@@ -503,29 +503,51 @@
 .strong {
   font-weight: 800; }
 
+.green {
+  background: #8ec200; }
+  .green:hover {
+    background: #b3f500; }
+
+.orange {
+  background: #f57b13; }
+  .orange:hover {
+    background: #f79644; }
+
+.red {
+  background: #e30400; }
+  .red:hover {
+    background: #ff1b17; }
+
+.zorgmeter-wrapper {
+  display: grid;
+  justify-content: space-around;
+  justify-content: center; }
+
 .zorgmeter {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   justify-content: center;
   align-content: center;
   text-align: center;
+  font-weight: 800;
   /* Show the tooltip text when you mouse over the tooltip container */ }
   .zorgmeter .th {
-    font-weight: 800;
-    border-bottom: 2px solid #000; }
+    border-bottom: 2px solid #000;
+    background: #fff; }
   .zorgmeter .ti {
     text-align: right;
     border-right: 2px solid #000;
-    padding-right: .5rem; }
+    padding-right: .5rem;
+    background: #fff; }
   .zorgmeter > div {
     padding: 2px; }
   .zorgmeter .tooltip {
-    background: coral;
     cursor: pointer;
     border: 1px solid #00000047;
-    min-width: 26px; }
+    min-width: 26px;
+    color: #fff; }
   .zorgmeter .tooltip span {
-    visibility: hidden;
+    display: none;
     text-align: center;
     position: absolute;
     z-index: 1;
@@ -537,21 +559,18 @@
     background-color: #fff;
     color: #000; }
   .zorgmeter .tooltip:hover span {
-    visibility: visible; }
-  .zorgmeter .green {
-    background: green; }
-    .zorgmeter .green:hover {
-      background: #00b300; }
-  .zorgmeter .orange {
-    background: orange; }
-    .zorgmeter .orange:hover {
-      background: #ffb733; }
-  .zorgmeter .red {
-    background: red; }
-    .zorgmeter .red:hover {
-      background: #ff3333; }
+    display: block; }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 485px) {
+  .zorgmeter .tooltip {
+    min-width: 50px; } }
+@media screen and (min-width: 548px) {
+  .zorgmeter .tooltip {
+    min-width: 58px; } }
+@media screen and (min-width: 753px) {
+  .zorgmeter .tooltip {
+    min-width: 85px; } }
+@media screen and (max-width: 1159px) {
   .zorgmeter {
     font-size: 0.8rem; }
     .zorgmeter .tooltip > span {
@@ -559,17 +578,142 @@
       left: 2vw;
       right: 2vw;
       margin-top: 24px; } }
-@media screen and (min-width: 720px) {
-  .zorgmeter {
-    grid-template-columns: auto 80px 80px 80px 80px 80px 80px 80px; }
-    .zorgmeter .tooltip {
-      position: relative; }
-    .zorgmeter .tooltip > span {
-      width: 360px;
-      top: 120%;
-      left: 50%;
-      margin-left: -180px;
-      /* Use half of the width (120/2 = 60), to center the tooltip */ } }
+@media screen and (min-width: 1160px) {
+  .zorgmeter .tooltip {
+    position: relative; }
+  .zorgmeter .tooltip > span {
+    width: 360px;
+    top: 120%;
+    left: 50%;
+    margin-left: -180px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */ } }
+.zorgmeter-wrapper2 {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-around; }
+
+@media screen and (min-width: 420px) {
+  .zorgmeter-wrapper2 {
+    grid-template-columns: auto auto; } }
+@media screen and (min-width: 620px) {
+  .zorgmeter-wrapper2 {
+    grid-template-columns: auto auto auto; } }
+.zorgmeter-legenda2 {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center; }
+
+/*
+  .zorgmeter2.tab1 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 60%, rgba(227,4,0,1) 100%);
+  }
+  .zorgmeter2.tab2 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 45%, rgba(227,4,0,1) 100%);
+  }
+  .zorgmeter2.tab3 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 20%, rgba(227,4,0,1) 100%);
+  }
+  .zorgmeter2.tab4 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 50%, rgba(227,4,0,1) 100%);
+  }
+  .zorgmeter2.tab5 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 73%, rgba(227,4,0,1) 100%);
+  }
+  .zorgmeter2.tab6 {
+    background: rgb(142,194,0);
+    background: linear-gradient(180deg, rgba(142,194,0,1) 25%, rgba(227,4,0,1) 50%);
+  }
+*/
+.zorgmeter2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 1rem;
+  font-weight: 800;
+  justify-content: stretch;
+  /* Show the tooltip text when you mouse over the tooltip container */
+  /*
+  .green {
+    background: limegreen;
+    &:hover {
+      background: darken(limegreen, 10%);
+    }
+  }
+  .orange {
+    background: #ffb21e;
+    &:hover {
+      background: darken(#ffb21e, 10%);
+    }
+  }
+  .red {
+    background: red;
+    &:hover {
+      background: darken(red, 10%);
+    }
+
+  }
+  */ }
+  .zorgmeter2 .th {
+    font-weight: 800;
+    border-bottom: 3px solid #8ec200;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #fff; }
+  .zorgmeter2 .partij {
+    background: #fff; }
+  .zorgmeter2 > div {
+    padding: 2px; }
+  .zorgmeter2 .tooltip {
+    cursor: pointer;
+    border-bottom: 3px solid #fff;
+    min-width: 85px;
+    color: #fff; }
+  .zorgmeter2 .tooltip span {
+    display: none;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    width: 360px;
+    padding: .5rem;
+    border: 4px solid #ff5900;
+    border-radius: 8px;
+    box-shadow: 2px 4px 5px #5f5f5f;
+    background-color: #fff;
+    color: #000; }
+  .zorgmeter2 .tooltip:hover span {
+    display: block; }
+
+@media screen and (max-width: 1159px) {
+  .zorgmeter-wrapper,
+  .zorgmeter-legenda {
+    display: none !important; }
+
+  .zorgmeter2 .tooltip > span {
+    width: 96vw;
+    left: 2vw;
+    right: 2vw;
+    margin-top: 24px; } }
+@media screen and (min-width: 1160px) {
+  .zorgmeter-wrapper2 {
+    display: none !important; }
+
+  .zorgmeter2 .tooltip {
+    position: relative; }
+  .zorgmeter2 .tooltip > span {
+    width: 360px;
+    top: 120%;
+    left: 50%;
+    margin-left: -180px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */ } }
 /* Set font to Roboto */
 html, body, p, ul, ol, li, tr, td, th, label, .form-item label, input, textarea, strong {
   font-family: 'Roboto', sans-serif; }
