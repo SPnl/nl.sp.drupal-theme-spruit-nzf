@@ -7,7 +7,7 @@
       }, 1000);
 
       $("#nzf-header-aftrap").click(function(){
-        window.location.href = "/26-november";
+        window.location.href = "/fractievoorzitters";
       });
 
     }

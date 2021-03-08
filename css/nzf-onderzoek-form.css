@@ -1,0 +1,49 @@
+#webform-client-form-179 #edit-submitted-leeftijd {
+  width: 3em;
+}
+
+#webform-client-form-179 .webform-component--leeftijd label {
+  float: left;
+  position: relative;
+  top: 9px;
+}
+
+#webform-client-form-179 #edit-submitted-beroep {
+  margin-bottom: 1em;
+}
+
+#webform-client-form-179 fieldset.webform-component-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#webform-client-form-179 .webform-component--wel-in-zorg--box0 input {
+  width: 3em;
+  float: left;
+}
+
+#webform-client-form-179 .webform-component--wel-in-zorg--box0 span.field-suffix {
+  position: relative;
+  top: 11px;
+  left: 5px;
+}
+
+#webform-client-form-179 .webform-component--wel-in-zorg--box0 label {
+  float: left;
+  width: 80%;
+}
+
+#webform-client-form-179 .webform-component-markup p {
+  font-size: 16px;
+  margin-bottom: -0.5em;
+}
+
+#webform-client-form-179 div.form-item.webform-component {
+  margin-bottom: 2em;
+}
+
+.onderzoekonderschrift p {
+  font-size: 9px;
+  color: #ff5900;
+}
