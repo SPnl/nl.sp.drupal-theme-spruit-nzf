@@ -8,8 +8,15 @@
     padding: 0 1rem 0 0;
     a {
       display: inline-block;
+      background: #ff5900;
+      color: #fff;
+      border: 2px solid #ff5900;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
       &:hover {
         //border-bottom: none;
+        background: #fff;
+        color: #ff5900;
       }
     }
   }
